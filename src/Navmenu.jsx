@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import './Style.css'
+import './style.css'
 import { useState, useEffect } from "react";
 export default function Navmenu() {
 
