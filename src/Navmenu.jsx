@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import './Style.css'
 import { useState, useEffect } from "react";
-export default function Navbar() {
+export default function Navmenu() {
 
     const [darkMode, setDarkMode] = useState(false);
 
