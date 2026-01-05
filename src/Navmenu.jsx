@@ -37,7 +37,7 @@ export default function Navmenu() {
                                 <li><Link to="/">SEO</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/">Pooja Items</Link></li>
+                        <li><Link to="/collection">Pooja Items</Link></li>
                     </ul>
 
 
@@ -98,7 +98,7 @@ export default function Navmenu() {
                                 <li><Link to="/">SEO</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/">Pooja Items</Link></li>
+                        <li><Link to="/collection">Pooja Items</Link></li>
                     </ul>
 
 
