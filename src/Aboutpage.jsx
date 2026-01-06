@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Navmenu from './Navmenu'
 import Footer from './Footer-section'
-export default function aboutpage() {
+export default function Aboutpage() {
 
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
