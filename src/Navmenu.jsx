@@ -89,7 +89,7 @@ export default function Navmenu() {
 
                                                    <ul className='nav-list'>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/Aboutus">About Us</Link></li>
+                        <li><Link to="/collection">About Us</Link></li>
                         <li><a href='#contact-us'>Contact Us</a></li>
                         <li className="dropdown"><Link to="/" className="dropbtn">God Idols <i className="fa fa-angle-down"></i></Link>
                             <ul className="dropdown-menu " id='dropmenu-menu'>
@@ -98,7 +98,7 @@ export default function Navmenu() {
                                 <li><Link to="/">SEO</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/collection">Pooja Items</Link></li>
+                        <li><Link to="/Aboutus">Pooja Items</Link></li>
                     </ul>
 
 
