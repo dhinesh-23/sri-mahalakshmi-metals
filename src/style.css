@@ -1381,9 +1381,7 @@ textarea:focus {
 .about-bg {
   display: flex;
   flex-direction: column;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.179),
-      rgba(0, 0, 0, 0.55)),url(./aboutbg.jpg);
+  background-image:url(./aboutbg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
