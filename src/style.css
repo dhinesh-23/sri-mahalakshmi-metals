@@ -1383,8 +1383,7 @@ textarea:focus {
   flex-direction: column;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.179),
-      rgba(0, 0, 0, 0.55)),
-    url(./about-us.jpg);
+      rgba(0, 0, 0, 0.55)),url(./aboutbg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1657,7 +1656,7 @@ textarea:focus {
   }
 
   .about-bg {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 6 / 5;
   }
 
   .about-box {
