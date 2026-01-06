@@ -94,9 +94,10 @@ export default function Collection() {
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
                                         <img src={item.image} alt={item.image} />
+                                        <img src="./whatsapp-icon.png" className="whatsapp-logo" alt="whatsapp-logo" />
                                     </div>
                                     <div className="flip-card-back">
-                                        <p className="back-title">{item.title}</p>
+                                        <h3 className="back-title">{item.title}</h3>
                                         <p>{item.description}</p>
 
                                         <button className="whatapp-Btn">

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 export default function footer() {
     return (
         <>
@@ -25,10 +25,10 @@ export default function footer() {
                         <div className="footer-item">
 
                             <li id='footer-title'>Quick links</li>
-                            <li>Home</li>
-                            <li>about us</li>
-                            <li>collections</li>
-                            <li>contact</li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/Aboutus">about us</Link></li>
+                            <li><Link to="/collection">collections</Link></li>
+                            <li><Link to="/">contact</Link></li>
 
 
                         </div>
