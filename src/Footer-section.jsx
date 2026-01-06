@@ -25,9 +25,9 @@ export default function footer() {
                         <div className="footer-item">
 
                             <li id='footer-title'>Quick links</li>
-                            <li><Link to="/Aboutus">Home</Link></li>
-                            <li><Link to="/collection">about us</Link></li>
-                            <li><Link to="/Aboutus">collections</Link></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/Aboutus">about us</Link></li>
+                            <li><Link to="/collection">collections</Link></li>
                             <li><Link to="/">contact</Link></li>
 
 

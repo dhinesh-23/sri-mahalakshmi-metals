@@ -7,6 +7,8 @@ import Collectionpage from './collectionpage';
 import Aboutpage from './aboutpage';
 
 
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <BrowserRouter>
