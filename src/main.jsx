@@ -4,17 +4,20 @@ import { BrowserRouter, Route ,Routes} from 'react-router-dom'
 import "./style.css";
 import Home from './Home'
 import Collectionpage from './collectionpage';
-import Aboutus from './Aboutus';
-
+import Aboutus from './Aboutus'
+import ScrollToHash from './ScrollToHash';
+import Product from './Product';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    <BrowserRouter>
+   <ScrollToHash/>
      <Routes>
          <Route path='/'   element= {<Home/>}/>
          <Route path='/collection'   element= {<Collectionpage/>}/>
          <Route path='/Aboutus'   element= {<Aboutus/>}/>
+         <Route path='/Product'   element= {<Product/>}/>
       </Routes>
      </BrowserRouter>
   </StrictMode>

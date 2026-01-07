@@ -43,6 +43,25 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background:var(--secondary-color);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
 h1 {
   font-size: var(--Heading-font);
   color: var(--section-title-color);
@@ -182,6 +201,8 @@ p {
   background: white;
   min-width: 250px;
   list-style: none;
+  max-height: 118px;
+  overflow-y: auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -982,7 +1003,7 @@ textarea:focus {
   font-size: 16px;
   padding-inline: 20px;
   background-color: transparent;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-transform: uppercase;
   overflow: hidden;
   text-align: center;
@@ -1009,7 +1030,7 @@ textarea:focus {
   position: absolute;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 36px;
   z-index: 2;
 }
@@ -1035,10 +1056,11 @@ textarea:focus {
   right: 0;
   width: 54px;
   height: 54px;
+  color: var(--light-brown-color);
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  background-color: var(--light-brown-color);
+  background-color: var(--primary-color);
   z-index: 2;
 }
 
@@ -1382,11 +1404,9 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   background-image:
-  linear-gradient(
-    rgba(0, 0, 0, 0.179),
-    rgba(0, 0, 0, 0.55)
-  ),
-  url("/aboutbg.jpg");
+    linear-gradient(rgba(0, 0, 0, 0.179),
+      rgba(0, 0, 0, 0.55)),
+    url("/aboutbg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1453,6 +1473,25 @@ textarea:focus {
   margin-top: 10px;
   word-spacing: 1.5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1540,12 +1579,13 @@ textarea:focus {
   .dropdown-menu {
     display: none;
     position: absolute;
-    top: 50%;
-    left: -260px;
+    top: 150%;
+    left: -80px;
     background: white;
     min-width: 250px;
     list-style: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
   }
 
   .contact-info {
@@ -1665,9 +1705,10 @@ textarea:focus {
   .about-box {
     padding: 50px 30px 30px 30px;
   }
+
   .about-box {
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 }
 
 @media (max-width: 480px) {
@@ -1737,12 +1778,15 @@ textarea:focus {
   .footer-box2 {
     padding: 40px 30px;
   }
-      .about-box {
-        padding: 50px 20px 20px 20px;
-    }
-    .about-mission ,.our-story {
+
+  .about-box {
+    padding: 50px 20px 20px 20px;
+  }
+
+  .about-mission,
+  .our-story {
     padding: 30px 5px;
-}
+  }
 }
 
 @media (max-width: 360px) {
@@ -1757,8 +1801,9 @@ textarea:focus {
     max-width: 280px;
     width: 100%;
   }
-   .about-bg {
-        aspect-ratio: 8 / 9;
+
+  .about-bg {
+    aspect-ratio: 8 / 9;
   }
 
 
