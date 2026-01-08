@@ -6,8 +6,8 @@ import Home from './Home'
 import Collectionpage from './collectionpage';
 import Aboutus from './Aboutus'
 import ScrollToHash from './ScrollToHash';
-import Product from './Product';
-
+import ProductView from "./Productview";
+import Errorfound from './Errorfound';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')).render(
          <Route path='/'   element= {<Home/>}/>
          <Route path='/collection'   element= {<Collectionpage/>}/>
          <Route path='/Aboutus'   element= {<Aboutus/>}/>
-         <Route path='/Product'   element= {<Product/>}/>
+         <Route path="/product/:slug" element={<ProductView />} />
       </Routes>
      </BrowserRouter>
   </StrictMode>

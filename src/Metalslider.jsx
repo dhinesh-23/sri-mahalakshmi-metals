@@ -8,14 +8,14 @@ export default function Metalslider() {
   const [slidesPerView, setSlidesPerView] = useState(4);
 
   const slides = [
-    { img: "./Brass-Product/Brass Product - 02.png", link: "/metal2", item_name: "narasimha" },
-    { img: "./Brass-Product/Brass Product - 04.png", link: "/metal4", item_name: "maha lakshmi amman" },
-    { img: "./Product Image/Product image -02.png", link: "/metal6", item_name: "vinayagar" },
-    { img: "./Product Image/Product image -03.png", link: "/metal7", item_name: "hanuman" },
-    { img: "./Product Image/Product image -04.png", link: "/metal8", item_name: "KALASAM" },
-    { img: "./Product Image/Product image -01.png", link: "/metal5", item_name: "DHANVANTARI" },
-    { img: "./Brass-Product/Brass Product - 01.png", link: "/metal1", item_name: "murugan" },
-    { img: "./Brass-Product/Brass Product - 03.png", link: "/metal3", item_name: "krishna" },
+    { img: "./Brass-Product/Brass Product - 02.png", link: "/product/narasimha", item_name: "narasimha" },
+    { img: "./Brass-Product/Brass Product - 04.png", link: "/product/maha lakshmi amman", item_name: "maha lakshmi amman" },
+    { img: "./Product Image/Product image -02.png", link: "/product/vinayagar", item_name: "vinayagar" },
+    { img: "./Product Image/Product image -03.png", link: "/product/hanuman", item_name: "hanuman" },
+    { img: "./Product Image/Product image -04.png", link: "/product/KALASAM", item_name: "KALASAM" },
+    { img: "./Product Image/Product image -01.png", link: "/product/brass", item_name: "DHANVANTARI" },
+    { img: "./Brass-Product/Brass Product - 01.png", link: "/product/murugan", item_name: "murugan" },
+    { img: "./Brass-Product/Brass Product - 03.png", link: "/product/krishna", item_name: "krishna" },
   ];
 
   // Responsive slidesPerView

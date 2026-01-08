@@ -1,5 +1,6 @@
-import React from 'react'
-import Navmenu from './Navmenu'
+
+import Navmenu from '../Navmenu'
+import Productview from './Productview'
 
 export default function Product() {
   return (
@@ -9,9 +10,8 @@ export default function Product() {
        <section className='begin-container'>
               
               <h3>product name</h3>
-
-
-
+                
+                <Productview/>
 
 
 

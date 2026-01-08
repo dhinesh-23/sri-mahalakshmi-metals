@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './style.css'
+import Logo from '/logo22.png'
 import { useState, useEffect } from "react";
 export default function Navmenu() {
 
@@ -23,7 +24,7 @@ export default function Navmenu() {
             <div className="nav-section">
                 <nav className='nav'>
                     <div className="logo-box">
-                        <img src="./logo22.png" alt="logo" />
+                        <img src={Logo} alt="logo" />
                     </div>
 
                     <ul className='nav-list' id='normal-link'>
