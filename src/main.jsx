@@ -7,7 +7,6 @@ import Collectionpage from './collectionpage';
 import Aboutus from './Aboutus'
 import ScrollToHash from './ScrollToHash';
 import ProductView from "./Productview";
-import Errorfound from './Errorfound';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
