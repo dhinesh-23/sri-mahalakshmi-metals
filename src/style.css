@@ -49,11 +49,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background:transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background:var(--secondary-color);
+  background: var(--secondary-color);
   border-radius: 10px;
   transition: 0.5s ease;
 }
@@ -1100,6 +1100,7 @@ textarea:focus {
   color: var(--footer-content-color);
   max-width: 400px;
   margin: 20px 0px;
+  text-align: justify;
 }
 
 .footer-item h5 {
@@ -1463,6 +1464,7 @@ textarea:focus {
 .about-mission p {
   margin-top: 10px;
   word-spacing: 1.5px;
+  text-align: justify;
 }
 
 .our-story {
@@ -1472,6 +1474,7 @@ textarea:focus {
 .our-story p {
   margin-top: 10px;
   word-spacing: 1.5px;
+  text-align: justify;
 }
 
 
@@ -1497,29 +1500,32 @@ textarea:focus {
 .product-view {
   max-width: 1650px;
   width: 100%;
-  padding: 0px 20px;
-  margin:auto;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-.product-image-box{
+
+.product-image-box {
   justify-items: center;
   padding: 20px;
 }
-.main-image{
+
+.main-image {
   position: relative;
   width: 100%;
   max-width: 500px;
   overflow: hidden;
   border-radius: 20px;
 }
-.whatsapp-productlogo{
+
+.whatsapp-productlogo {
   position: absolute;
   right: 0%;
   max-height: 60px;
   max-width: 60px;
   aspect-ratio: 1/1;
 }
+
 .main-image img {
   width: 100%;
   aspect-ratio: 1/1;
@@ -1527,9 +1533,11 @@ textarea:focus {
   transform: scale(1.05);
   transition: 0.5s ease;
 }
-.main-image img:hover{
+
+.main-image img:hover {
   transform: scale(1.3);
 }
+
 .thumbnail-list {
   display: flex;
   gap: 10px;
@@ -1548,19 +1556,22 @@ textarea:focus {
 .thumbnail-list img.active {
   border: 2px solid var(--secondary-color);
 }
-.product-content{
+
+.product-content {
   padding: 20px;
 }
-.product-content h3{
+
+.product-content h3 {
   display: inline;
   position: relative;
   text-align: left;
   cursor: pointer;
 }
+
 .product-content h3::after {
   content: "";
   position: absolute;
-  left:18%;
+  left: 18%;
   bottom: 0;
   height: 3px;
   width: 0;
@@ -1572,48 +1583,55 @@ textarea:focus {
 .product-content h3:hover::after {
   width: 70%;
 }
-.product-content p{
-  padding: 30px 20px 30px 0px;
+
+.product-content p {
+  padding: 30px 0px;
   max-width: 600px;
   text-align: justify;
   line-height: 150%;
 }
-.product-content h4{
+
+.product-content h4 {
   text-align: left;
   cursor: pointer;
   color: var(--secondary-color);
   text-transform: capitalize;
 }
-.product-content ul{
+
+.product-content ul {
   padding: 10px 10px 10px 0px;
 }
-.product-content li{
+
+.product-content li {
   display: flex;
   gap: 10px;
   margin-top: 20px;
   list-style: none;
 }
-.product-content h5{
+
+.product-content h5 {
   font-family: var(--font-inter);
   font-size: var(--para-size);
   color: var(--primary-color);
   text-transform: capitalize;
 }
-.product-content span{
+
+.product-content span {
   font-family: var(--font-inter);
   font-size: var(--para-size);
   text-transform: capitalize;
   font-weight: var(--font-normal-weight);
 }
 
-.product-btn{
+.product-btn {
   max-width: 600px;
   width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
-.whatsapp-btn{
+
+.whatsapp-btn {
   background-color: #fff;
   border: 1px solid #25D366;
   padding: 5px;
@@ -1662,10 +1680,30 @@ textarea:focus {
 }
 
 
+/* recommended product */
 
+.Recommendedproduct-section {
+  max-width: 1650px;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
 
+.product-grid a {
+  text-decoration: none;
+}
 
+.product-grid h4 {
+  padding: 10px 0px 0px 0px;
+  text-transform: capitalize;
+}
 
 
 
@@ -1808,6 +1846,7 @@ textarea:focus {
   .about-box {
     padding: 80px 50px 50px 50px;
   }
+
   .product-view {
     gap: 30px;
   }
@@ -1894,17 +1933,18 @@ textarea:focus {
   .about-box {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .product-view {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .product-content p {
-    padding: 30px 20px 30px 0px;
-    max-width:100%;
+    max-width: 100%;
   }
-  .whatsapp-btn p {
-    position: absolute;
-    top: -80%;
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
@@ -1985,6 +2025,9 @@ textarea:focus {
   .our-story {
     padding: 30px 5px;
   }
+  .product-grid{
+  grid-template-columns: repeat(1,1fr);
+}
 }
 
 @media (max-width: 360px) {

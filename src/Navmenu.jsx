@@ -70,23 +70,23 @@ export default function Navmenu() {
                     </div>
 
 
-                    <div class="nav-burger">
+                    <div className="nav-burger">
 
                         {/* <!-- Hidden Checkbox --> */}
                         <input type="checkbox" id="menu-toggle" />
 
                             {/* <!-- Hamburger Button --> */}
-                            <label for="menu-toggle" class="menu-btn">
+                            <label htmlFor="menu-toggle" className="menu-btn">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </label>
 
                             {/* <!-- Links --> */}
-                            <div class="link2">
+                            <div className="link2">
 
                                 {/* <!-- CLOSE BUTTON INSIDE MENU --> */}
-                                <li class="close-btn"><label for="menu-toggle"><i class="fa fa-remove"></i></label></li>
+                                <li className="close-btn"><label htmlFor="menu-toggle"><i className="fa fa-remove"></i></label></li>
 
 
 
