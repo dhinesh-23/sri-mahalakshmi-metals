@@ -5,7 +5,7 @@ import Logo from '/logo22.png'
 import { useState, useEffect } from "react";
 export default function Navmenu() {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     useEffect(() => {
         if (darkMode) {

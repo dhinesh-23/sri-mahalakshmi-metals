@@ -520,8 +520,8 @@ p {
   cursor: pointer;
   border-radius: 20px;
   padding: 10px;
-  border: 1px solid brown;
   background-color: var(--light-brown-color);
+  border: 1px solid var(--secondary-color);
   text-align: center;
   transition: 0.5s ease;
 }
@@ -950,8 +950,9 @@ p {
   width: 100%;
   padding: 15px;
   color: var(--primary-color);
-  border-radius: 10px;
-  border: 1px solid var(--primary-color);
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -983,10 +984,11 @@ textarea:focus {
   height: 300px;
   width: 100%;
   padding: 15px;
+  background-color: transparent;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* From Uiverse.io by Carlos-vargs */
